@@ -1,3 +1,6 @@
 # PrototypeDNN
-Codebase for "Deep Learning for Case-based Reasoning through Prototypes: A Neural Network
-that Explains Its Predictions" (to appear in AAAI 2018)
+Pytorch adaption of "Deep Learning for Case-based Reasoning through Prototypes: A Neural Network
+that Explains Its Predictions" 
+Original TensorFlow implementation: https://github.com/OscarcarLi/PrototypeDL
+Paper: https://arxiv.org/abs/1710.04806
+

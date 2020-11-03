@@ -102,3 +102,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# results, saved images and models
+/results
+
+# dataset
+/dataset

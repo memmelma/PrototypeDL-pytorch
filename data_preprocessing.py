@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Jul 10 21:22:58 2017
+
+Source: https://github.com/OscarcarLi/PrototypeDL
 """
 import numpy as np
 from scipy.ndimage.interpolation import map_coordinates
@@ -36,7 +38,7 @@ def batch_elastic_transform(images, sigma, alpha, height, width, random_state=No
         indices = x + dx, y + dy
         e_images[i] = map_coordinates(e_images[i], indices, order=1)
 
-    return e_images.reshape(-1, 784)
+    return e_images.reshape(-1, height*width)
 
 if __name__ == "__main__":
     import matplotlib.pyplot as plt

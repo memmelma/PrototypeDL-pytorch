@@ -4,6 +4,8 @@
 Created on Wed Jul  5 17:01:37 2017
 
 @author: Oscar Li
+
+Source: https://github.com/OscarcarLi/PrototypeDL
 """
 import os
 import tensorflow as tf
@@ -28,7 +30,6 @@ def list_of_distances(X, Y):
     XX = tf.reshape(list_of_norms(X), shape=(-1, 1))
     YY = tf.reshape(list_of_norms(Y), shape=(1, -1))
     output = XX + YY - 2 * tf.matmul(X, tf.transpose(Y))
-
     return output
 
 def list_of_norms(X):
