@@ -103,5 +103,5 @@ class DenseLayerSoftmax(nn.Module):
 
     def forward(self, x):
         out = self.linear(x)
-        out = self.softmax(out)
+#         out = self.softmax(out)
         return out
